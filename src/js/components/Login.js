@@ -109,7 +109,7 @@ class LoginForm extends Component {
                     </div>
                     <div className="clearfix">
                         <label className="pull-left checkbox-inline"><input type="checkbox" /> Remember me</label>
-                        <PasswordForgetLink  />
+                        <PasswordForgetLink />
                     </div>  
                     
                     { error && <p>{error.message}</p> }

@@ -68,7 +68,7 @@ class PasswordForgetForm extends Component {
 
 const PasswordForgetLink = () =>
     <div className="pull-right text-success">
-        <Link to={routes.PASSWORD_FORGET}>Forgot Password?</Link>
+        <Link className="fgt-pwd-size" to={routes.PASSWORD_FORGET}>Forgot Password?</Link>
     </div>
 
 export default PasswordForgetPage;

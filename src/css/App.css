@@ -50,6 +50,8 @@
 .input-group-addon .fa{
     font-size: 18px;
 }
+
+/* Custom icons */
 .fa.fa-user-circle {
     font-size: 20px;
     margin: 12px !important;
@@ -61,4 +63,14 @@
 .fa.fa-key {
     font-size: 20px;
     margin: 12px !important;
+}
+a.fgt-pwd-size {
+    font-size: 80%;
+    font-weight: 400;
+    color: #777 !important;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #3b5998 !important;
+    border-color: #3b5998 !important;
 }
