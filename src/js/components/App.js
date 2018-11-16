@@ -10,6 +10,7 @@ import PasswordForgetPage from './PasswordForget';
 
 import * as routes from '../constants/routes';
 import withAuthentication from './withAuthentication';
+import "../../vendor/bootstrap/css/custom/lux/bootstrap.min.css";
 import '../../css/App.css';
 import '../../vendor/metisMenu/metisMenu.min.css';
 import '../../dist/css/sb-admin-2.css';

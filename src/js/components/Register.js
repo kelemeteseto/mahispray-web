@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link, withRouter, } from 'react-router-dom';
 
+import { LoginLink } from './Login';
 import { auth, db } from '../../config/';
 import * as routes from '../constants/routes';
 
@@ -139,6 +140,7 @@ class RegisterForm extends Component {
 
                     { error && <p>{error.message}</p> }
                 </form>
+                <LoginLink />
             </div>            
         );
     }

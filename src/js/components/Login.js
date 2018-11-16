@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 import { RegisterLink } from './Register';
 import { PasswordForgetLink } from './PasswordForget';
@@ -78,7 +78,7 @@ class LoginForm extends Component {
                     <div className="or-seperator"><i>or</i></div>
                     <div className="form-group">
                         <div className="input-group">
-                            <span className="input-group-addon"><i className="fa fa-envelope"></i></span>
+                            <span className="input-group-addon"><i className="fa fa-envelope"></i></span>                         
                             <input 
                                 type="email"
                                 name="email" 
@@ -120,8 +120,16 @@ class LoginForm extends Component {
     }
 }
 
+const LoginLink = () =>
+    <div className="hint-text small">
+        Already have an account?
+        {' '}
+        <Link to={routes.LOGIN} className="text-success">Login Now!</Link>
+    </div>
+
 export default withRouter(LoginPage);
 
 export {
     LoginForm,
+    LoginLink,
 };
