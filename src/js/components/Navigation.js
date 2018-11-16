@@ -16,8 +16,8 @@ const Navigation = () =>
 
 const NavigationAuth = () =>
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div className="nav-item active">
-            <Link className="nav-link" to={routes.HOME}>Mahi Spray</Link>
+        <div className="navbar-brand">
+            <Link className="nav-item" to={routes.HOME}>Mahi Spray</Link>
         </div>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
