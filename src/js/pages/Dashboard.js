@@ -5,7 +5,7 @@ class Dashboard extends Component {
         return (
             <div id="wrapper">                
                 <nav className="navbar navbar-default navbar-static-top" role="navigation" style={{ marginBottom: 0 }}>
-                    <div className="navbar-header">
+                    {/* <div className="navbar-header">
                         <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span className="sr-only" /> Toggle navigation
                             <span className="icon-bar" />
@@ -13,7 +13,7 @@ class Dashboard extends Component {
                             <span className="icon-bar" />
                         </button>
                         <a className="navbar-brand" href="index.html">Mahi Spray</a>
-                    </div>                    
+                    </div>                     */}
 
                     <ul className="nav navbar-top-links navbar-right">
                         <li className="dropdown">
@@ -227,7 +227,7 @@ class Dashboard extends Component {
                     <div className="navbar-default sidebar" role="navigation">
                         <div className="sidebar-nav navbar-collapse">
                             <ul className="nav" id="side-menu">
-                                <li className="sidebar-search">
+                                {/* <li className="sidebar-search">
                                     <div className="input-group custom-search-form">
                                         <input type="text" className="form-control" placeholder="Search..." />
                                         <span className="input-group-btn">
@@ -237,7 +237,7 @@ class Dashboard extends Component {
                                     </span>
                                     </div>
                                     
-                                </li>
+                                </li> */}
                                 <li>
                                     <a href="index.html"><i className="fa fa-dashboard fa-fw"></i> Dashboard</a>
                                 </li>

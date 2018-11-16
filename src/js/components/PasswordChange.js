@@ -45,25 +45,44 @@ class PasswordChangeForm extends Component {
         passwordOne === '';
 
         return (
-        <form onSubmit={this.onSubmit}>
-            <input
-            value={passwordOne}
-            onChange={event => this.setState(byPropKey('passwordOne', event.target.value))}
-            type="password"
-            placeholder="New Password"
-            />
-            <input
-            value={passwordTwo}
-            onChange={event => this.setState(byPropKey('passwordTwo', event.target.value))}
-            type="password"
-            placeholder="Confirm New Password"
-            />
-            <button disabled={isInvalid} type="submit">
-            Reset My Password
-            </button>
+            <div className="login-form">
+                <form onSubmit={this.onSubmit}>
+                    <h5 className="h5-align">Change Password</h5>
+                    <div className="form-group">
+                        <div className="input-group">
+                            <span className="input-group-addon"><i className="fa fa-key"></i></span>                         
+                            <input 
+                                type="password"
+                                name="password" 
+                                value={passwordOne}
+                                onChange={event => this.setState(byPropKey('passwordOne', event.target.value))}
+                                className="form-control" 
+                                id="inputPassword1"
+                                placeholder="New Password"
+                                required="required" />
+                        </div>
+                    </div>
+                    <div className="form-group">
+                        <div className="input-group">
+                            <span className="input-group-addon"><i className="fa fa-key"></i></span>                         
+                            <input 
+                                type="password"
+                                name="password" 
+                                value={passwordTwo}
+                                onChange={event => this.setState(byPropKey('passwordTwo', event.target.value))}
+                                className="form-control" 
+                                id="inputPassword2"
+                                placeholder="Confirm New Passowrd"
+                                required="required" />
+                        </div>
+                    </div>
+                    <button disabled={isInvalid} type="submit" className="btn btn-success btn-block login-btn">
+                        Reset My Password
+                    </button>                    
 
-            { error && <p>{error.message}</p> }
-        </form>
+                    { error && <p>{error.message}</p> }
+                </form>
+            </div>
         );
     }
 }

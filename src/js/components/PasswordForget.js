@@ -5,8 +5,7 @@ import { auth } from '../../config';
 import * as routes from '../constants/routes';
 
 const PasswordForgetPage = () =>
-    <div>
-        <h1>Forgot Password?</h1>
+    <div>        
         <PasswordForgetForm />
     </div>
 
@@ -49,19 +48,30 @@ class PasswordForgetForm extends Component {
         const isInvalid = email === '';
 
         return (
-            <form onSubmit={this.onSubmit}>
-                <input
-                    value={this.state.email}
-                    onChange={event => this.setState(byPropKey('email', event.target.value))}
-                    type="text"
-                    placeholder="Email Address"
-                />
-                <button disabled={isInvalid} type="submit">
-                    Reset My Password
-                </button>
+            <div className="login-form">
+                <form onSubmit={this.onSubmit}>
+                    <h5 className="h5-align">Forgot Password?</h5>
+                    <div className="form-group">
+                        <div className="input-group">
+                            <span className="input-group-addon"><i className="fa fa-envelope"></i></span>                         
+                            <input 
+                                type="email"
+                                name="email" 
+                                value={this.state.email}
+                                onChange={event => this.setState(byPropKey('email', event.target.value))} 
+                                className="form-control" 
+                                id="inputEmail1"
+                                placeholder="Email"
+                                required="required" />
+                        </div>
+                    </div>
+                    <button disabled={isInvalid} type="submit" className="btn btn-success btn-block login-btn">
+                        Reset My Password
+                    </button>      
 
-                { error && <p>{error.message}</p> }
-            </form>
+                    { error && <p>{error.message}</p> }
+                </form>
+            </div>
         );
     }
 }

@@ -77,3 +77,14 @@ a.fgt-pwd-size {
 a.nav-item {
     color: #fff !important;
 }
+
+/* Dashboard */
+#wrapper {
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* Password Forget and Password Change forms */
+h5.h5-align {
+    text-align: center;
+}
