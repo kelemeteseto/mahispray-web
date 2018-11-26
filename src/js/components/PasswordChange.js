@@ -77,7 +77,7 @@ class PasswordChangeForm extends Component {
                         </div>
                     </div>
                     <button disabled={isInvalid} type="submit" className="btn btn-success btn-block login-btn">
-                        Reset My Password
+                        Update My Password
                     </button>                    
 
                     { error && <p>{error.message}</p> }

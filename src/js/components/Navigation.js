@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import AuthUserContext from './AuthUserContext';
-import SignOutButton from './SignOut';
+import Profile from '../components/Profile';
 import * as routes from '../constants/routes';
 
 const Navigation = () =>
@@ -19,20 +19,13 @@ const NavigationAuth = () =>
         <div className="navbar-brand">
             <Link className="nav-item" to={routes.HOME}>Mahi Spray</Link>
         </div>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-        </button>
 
-        <div className="collapse navbar-collapse" id="navbarColor01">
-            <ul className="navbar-nav mr-auto">
-                <li className="nav-item">
-                    <Link className="nav-link" to={routes.HOME}>Home</Link>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link" to={routes.ACCOUNT}>Account</Link>
-                </li>                
-                <SignOutButton className="btn btn-secondary my-2 my-sm-0" />
+        <div className="collapse navbar-collapse" id="navbarColor02">
+            <ul className="navbar-nav mr-auto">                
+                <Link className="nav-item nav-link" to={routes.HOME}>Home</Link>                                
+                <Link className="nav-item nav-link" to={routes.ACCOUNT}>Account</Link>
             </ul>
+            <Profile />
         </div>
     </nav>    
 
@@ -43,13 +36,9 @@ const NavigationNonAuth = () =>
         </div>        
 
         <div className="collapse navbar-collapse" id="navbarColor01">
-            <ul className="navbar-nav mr-auto">       
-                <li className="nav-item">
-                    <Link className="nav-link" to={routes.LOGIN}>Login</Link>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link" to={routes.REGISTER}>Register</Link>
-                </li>
+            <ul className="navbar-nav mr-auto">                       
+                <Link className="nav-item nav-link" to={routes.LOGIN}>Login</Link>                                
+                <Link className="nav-item nav-link" to={routes.REGISTER}>Register</Link>                
             </ul>
         </div>
     </nav>
