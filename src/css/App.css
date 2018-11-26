@@ -69,10 +69,12 @@ a.fgt-pwd-size {
     font-weight: 400;
     color: #777 !important;
 }
-.btn-primary {
+#btn-facebook {
     color: #fff;
-    background-color: #3b5998 !important;
-    border-color: #3b5998 !important;
+    background-color: #3b5998;
+}
+#btn-facebook:hover {
+    background-color: #224591;
 }
 a.nav-item {
     color: #fff !important;
